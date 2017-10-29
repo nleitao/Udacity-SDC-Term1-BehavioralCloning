@@ -1,0 +1,67 @@
+com hsv, crop topo, list augmentaded, flip, 60x60
+flags=1 , simple, thr=0.07
+My NN = curve after bridge (1st third of curve).
+
+flags=2 , simple, thr=0.07
+My NN = curve after bridge (half of curve)
+
+flags=2 , fntstc, thr=0.07
+My NN = curve after bridge (half of curve, a bit better though)
+
+throtle = 0.045 sem improvement
+
+---
+com hsv, crop topo, list augmentaded, flip, 70x70 para dar na comma nvidia
+flags=2, fantastic, t=0.07
+nvidia.. not even first curve
+comma... same
+NN ...  curve after bridge (inicio mesmo da curva).
+
+exactamente o mesmo mas tirando o float16 do drive.py
+olha... perdeu o controle antes da ponte..mas so no fim da simulacao e que
+a vi.. ate la este no background.. tentei outra vez e saiu no meio da curva...
+
+o mesmo mas com 0.09 de throtle... bate na curva dps da ponte
+
+sem float mas com thr de volta a 0.07.. tirei os brightnesses do preproc drive.py
+bate na curva da ponte tb...
+
+com o float outra vez.. exactamente igual
+
+pus o drive de volta ao "original"
+
+---
+
+se o 70x70 estava pior do que 60x60.. vou por 50x50
+com hsv, crop topo, list augmentaded, flip
+flags=2
+QUASE que passava a curva.. bateu no ultimo pino va..ok.. parece que maix pequeno melhor..
+
+vou por 40x40...
+com 40x40 caiu ao rio na prima curva de rio... tentei outra vez e bateu no lugar do custome
+
+vou voltar aos 50x50, e flag=3
+FDX caralho passou a primeira curva!!!!
+mas fudeu-se na prox lol
+
+vou por flags=4
+flags=4.. fudeu-se...mas tentar outra vez
+tentar outra vez com =3.. e =5 ja agora
+ora... para amanha.. manter igual mas ver com a comma e nvidia
+
+
+tentei =4 e nada...
+voltei ao =3 e nada outra vez fdx..
+
+agora voltei ao =3 e pus tb a treinar com as tres cameras (corrigi um erro que no flip da camera da esquerda e direita a imagem era sempre a camera central)
+mudei a velocidade.. e deu.. piumbas..
+.faz video
+
+
+
+
+
+
+
+
+
